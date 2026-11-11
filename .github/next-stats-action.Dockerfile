@@ -4,7 +4,7 @@
 # apt-get entirely (the arm64 apt mirror, ports.ubuntu.com, is unreliable).
 FROM buildpack-deps:noble-scm AS base
 
-RUN curl -sfLS https://install-node.vercel.app/v20.9.0 | bash -s -- -f
+RUN curl -sfLS https://install-node.vercel.app/v22.23.5 | bash -s -- -f
 RUN npm i -g corepack@0.34.6
 RUN corepack enable
 
